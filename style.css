@@ -1,0 +1,169 @@
+*{
+    position: absolute;
+    margin:0;
+    padding:0;
+}
+body{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    
+}
+
+#main2{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/bgMAIN.png);
+    background-size: 100vw 100vh;
+    display: none;
+}
+
+#flip{
+    top: 35vh;
+    width: 13vw;
+    left: 55vw;
+    height: 7vh;
+    box-shadow: 0px 0px 2vw #dbf6ff;
+    border-radius: 5vw;
+}
+#intera{
+    top: 47vh;
+    width: 13vw;
+    left: 55vw;
+    height: 7vh;
+    box-shadow: 0px 0px 2vw #dbf6ff;
+    border-radius: 5vw;
+}
+#anima{
+    top: 59vh;
+    width: 13vw;
+    left: 55vw;
+    height: 7vh;
+    box-shadow: 0px 0px 2vw #dbf6ff;
+    border-radius: 5vw;
+}
+#ans{
+    top: 71vh;
+    width: 13vw;
+    left: 55vw;
+    height: 7vh;
+    box-shadow: 0px 0px 2vw #dbf6ff;
+    border-radius: 5vw;
+    
+}
+#worksheet{
+    top: 35vh;
+    width: 13vw;
+    left: 73vw;
+    height: 7vh;
+    box-shadow: 0px 0px 2vw #dbf6ff;
+    border-radius: 5vw;
+    filter: brightness(0.9644);
+}
+#audio{
+    top: 47vh;
+    width: 13vw;
+    left: 73vw;
+    height: 7vh;
+    box-shadow: 0px 0px 2vw #dbf6ff;
+    border-radius: 5vw;
+}
+#games{
+    top: 59vh;
+    width: 13vw;
+    left: 73vw;
+    height: 7vh;
+    box-shadow: 0px 0px 2vw #dbf6ff;
+    border-radius: 5vw;
+    
+}
+#test{
+    top: 59.1vh;
+    width: 13vw;
+    left: 73vw;
+    height: 7vh;
+    box-shadow: 0px 0px 2vw #dbf6ff;
+    border-radius: 5vw;
+    opacity: 1;
+}
+#books{
+    position: absolute;
+    width: 33vw;
+    background: #d7d5d5a3;
+    height: 20vw;
+    z-index: 5;
+    left: 36vw;
+    top: 20vw;
+    backdrop-filter: blur(0.9vw);
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 1vw white;
+}
+#books a img{
+    width: 13vw;
+    height: 14vw;
+    position: relative;
+}
+#books a{
+    position: relative;
+}
+#books a:hover{
+    scale: 1.06;
+    cursor: pointer;
+}
+#disagree:hover,#agree:hover,#audio:hover,#flip:hover,#intera:hover,#anima:hover,#worksheet:hover,#ans:hover,#test:hover{
+    transform: scale(1.02);
+}
+#introfirst{
+    width:100vw;
+    height:100vh;
+    top:0;
+    display: none;
+    z-index: 2;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity:1;
+    }
+    80%{
+        opacity:1;
+    }
+    100%{
+       opacity: 0;
+    }
+}
+
+@keyframes blink {
+    0%{ scale: 0.8;filter: brightness(10);rotate: 0deg;}
+    50%{scale: 0.3; filter: brightness(3);rotate: 180deg;}
+    100%{scale: 0.8;filter: brightness(10);rotate: 0deg;}
+}
+
+.star1{
+    width: 2vw;
+    left: 22vw;
+    top: 1vw;
+    animation: blink 2000ms linear infinite;
+}
+.star2{
+    width: 2vw;
+    left: 65vw;
+    top: 10vw;
+    animation: blink 2000ms linear infinite;
+}
+@keyframes show{
+    100%{opacity: 1;}
+}
+#close{
+    position: absolute;
+    width: 2vw;
+    height: auto;
+    right: 0;
+    top: 0;
+}
